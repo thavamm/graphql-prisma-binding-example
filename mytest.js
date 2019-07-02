@@ -3,8 +3,8 @@ import {Prisma} from 'prisma-binding';
 
 const prisma = new Prisma({
     typeDefs: 'prisma.graphql',
-    endpoint: 'http://localhost:9000/drreddy-prj-dev',
-    secret: 'mysecret',
+    endpoint: 'http://localhost:9000/dev',
+    secret: 'test',
 })
 
 const verticalsRes = prisma.query.verticals(null,'{id,vertical}');
